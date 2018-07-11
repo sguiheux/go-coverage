@@ -33,5 +33,5 @@ type CoverageMode string
 
 const (
 	LCOV      CoverageMode = "lcov"
-	COBERTURA              = "cobertura"
+	COBERTURA CoverageMode = "cobertura"
 )
