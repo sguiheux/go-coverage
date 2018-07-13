@@ -8,24 +8,24 @@ type Parser struct {
 
 //Report represents the result of  LcovParser.parse
 type Report struct {
-	Files            []FileReport
-	TotalLines       int
-	CoveredLines     int
-	TotalFunctions   int
-	CoveredFunctions int
-	TotalBranches    int
-	CoveredBranches  int
+	Files            []FileReport `json:"files"`
+	TotalLines       int          `json:"total_lines"`
+	CoveredLines     int          `json:"covered_lines"`
+	TotalFunctions   int          `json:"total_functions"`
+	CoveredFunctions int          `json:"covered_functions"`
+	TotalBranches    int          `json:"total_branches"`
+	CoveredBranches  int          `json:"covered_branches"`
 }
 
 // FileReport contains all informations about a file
 type FileReport struct {
-	Path             string
-	TotalLines       int
-	CoveredLines     int
-	TotalFunctions   int
-	CoveredFunctions int
-	TotalBranches    int
-	CoveredBranches  int
+	Path             string `json:"path"`
+	TotalLines       int    `json:"total_lines"`
+	CoveredLines     int    `json:"covered_lines"`
+	TotalFunctions   int    `json:"total_functions"`
+	CoveredFunctions int    `json:"covered_functions"`
+	TotalBranches    int    `json:"total_branches"`
+	CoveredBranches  int    `json:"covered_branches"`
 }
 
 // CoverageMode represents the format of the coverage reprt
