@@ -139,6 +139,8 @@ func (l Parser) processLcov() (Report, error) {
 		}
 
 	}
+	// Add last file
+	report.Files = append(report.Files, fileReport)
 	return report, nil
 }
 

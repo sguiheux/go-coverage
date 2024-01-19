@@ -17,6 +17,8 @@ func TestLCOV(t *testing.T) {
 	assert.Equal(t, 1695, report.TotalFunctions)
 	assert.Equal(t, 2798, report.CoveredLines)
 	assert.Equal(t, 6395, report.TotalLines)
+	assert.Equal(t, 182, len(report.Files))
+
 }
 
 func TestCobertura(t *testing.T) {
